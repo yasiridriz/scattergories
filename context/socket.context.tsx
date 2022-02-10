@@ -13,7 +13,7 @@ interface Context {
   rooms: object;
 }
 
-const socket = io(SOCKET_URL);
+const socket = io(SOCKET_URL, { transports: ['websocket', 'polling', 'flashsocket'] });
 
 const SocketContext = createContext<Context>({
   socket,
