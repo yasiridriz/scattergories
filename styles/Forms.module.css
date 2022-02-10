@@ -1,0 +1,69 @@
+.text {
+    background: transparent;
+    border: 2px solid #eaeaea;
+    border-radius: 8px;
+    padding: .5em;
+    font-size: 1.1rem;
+    margin: .5em 2em;
+    transition: all .15s ease-in-out;
+    font-weight: 300;
+}
+
+.text:focus {
+    outline: none;
+    border-color: #000;
+    transform: scale(1.1);
+}
+
+.button {
+    background: #000;
+    color: white;
+    border: 1px solid transparent;
+    padding: 1em;
+    line-height: normal;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .15s ease-in-out;
+    font-size: 1rem;
+    display: block;
+    margin: 1em auto;
+    /* disable text selection */
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+.button:hover {
+    opacity: .9;
+}
+
+.button:active, .button:focus {
+    transform: scale(.95);
+}
+
+.button:disabled,
+.button[disabled]{
+    opacity: .6;
+    transform: scale(.95);
+}
+
+.button.inline {
+    display: inline-block;
+    margin: 1em .5em;
+}
+
+.button.fullwidth {
+    width: 90%;
+}
+
+.formgroup {
+    margin: 1em 0;
+}

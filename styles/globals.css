@@ -1,0 +1,139 @@
+:root {
+  --gutter: 10px;
+  --bodywidth: 768px; 
+  /* Fonts */
+  --sansserif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --serif: Bitter, serif;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(0, 0, 0, .5);
+  opacity: 1;
+  /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgba(0, 0, 0, 0.5);
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: fixed;
+}
+
+body {
+  background: #f4d45e;
+  /* FDFAEC */
+  color: black;
+  padding: 0;
+  padding-bottom: 300px;
+  height: 100vh;
+  width: var(--bodywidth);
+  overflow: hidden;
+  margin: 0 auto;
+  font-display: auto;
+  font-family: var(--sansserif);
+  font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --bodywidth: 100vw;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 400;
+  font-family: var(--sansserif);
+  /* disable text selection */
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+p {
+  /* disable text selection */
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  pointer-events: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--serif);
+  text-align: center;
+  /* disable text selection */
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  pointer-events: none;
+}
+
+* {
+  box-sizing: border-box;
+  /* hide ios safari tap highlight */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+div.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  width: 100vw;
+  margin: 0 auto;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.topbar nav {
+  width: calc(var(--bodywidth) - 1em);
+}
+
+nav.topbar a {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+nav.topbar a i {
+  display: inline-block;
+}
+
+nav.topbar a.right {
+  position: absolute;
+  right: 0;
+}
