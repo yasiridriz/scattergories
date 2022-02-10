@@ -13,7 +13,7 @@ interface Context {
   rooms: object;
 }
 
-const socket = io(SOCKET_URL, { withCredentials: true });
+const socket = io(SOCKET_URL);
 
 const SocketContext = createContext<Context>({
   socket,

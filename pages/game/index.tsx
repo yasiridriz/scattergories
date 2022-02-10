@@ -30,24 +30,25 @@ const Join = () => {
       <Name />
       <main className={styles.main} style={{ background: 'transparent', border: 'none' }}>
         <div className='container'>
+          <Link href="/game/join">
+            <a>
+              <div className={`${forms.button}`} style={{ background: '#fdfaec', color: 'black', border: '3px solid black' }}>
 
-          <div className={`${forms.button}`} style={{ background: '#fdfaec', color: 'black', border: '3px solid black' }}>
-            <Link href="/game/join">
-              <a>
                 <h2>Join a room &rarr; </h2>
 
-              </a>
-            </Link>
-            <p>Join to a room to play with people all around the world</p>
-          </div>
-          <div className={`${forms.button}`} style={{ background: '#fdfaec', color: 'black', border: '3px solid black' }}>
-            <Link href="/game/create">
-              <a>
+
+                <p>Join to a room to play with people all around the world</p>
+              </div>
+            </a>
+          </Link>
+          <Link href="/game/create">
+            <a>
+              <div className={`${forms.button}`} style={{ background: '#fdfaec', color: 'black', border: '3px solid black' }}>
                 <h2>New room +</h2>
-              </a>
-            </Link>
-            <p>Create your own room and invite your friends to play</p>
-          </div>
+                <p>Create your own room and invite your friends to play</p>
+              </div>
+            </a>
+          </Link>
         </div>
       </main>
     </div>
